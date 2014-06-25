@@ -1,0 +1,84 @@
+///*------------------------------------*\
+//    #UI-LIST
+//\*------------------------------------*/
+
+// The UI list object creates blocky list items with a keyline separator out of
+// a `ul` or `ol`.
+
+// Predefine the variables below in order to alter and enable specific features.
+$tree-ui-list-padding:         $tree-base-spacing-unit !default;
+$tree-ui-list-padding--small:  halve($tree-ui-list-padding) !default;
+$tree-ui-list-padding--large:  double($tree-ui-list-padding) !default;
+
+$tree-ui-list-border-width:    1px !default;
+$tree-ui-list-border-style:    solid !default;
+$tree-ui-list-border-color:    #ccc !default;
+
+$tree-enable-ui-list--small:   false !default;
+$tree-enable-ui-list--large:   false !default;
+
+.#{$tree-namespace}ui-list,
+%#{$tree-namespace}ui-list,
+    .#{$tree-namespace}ui-list__item,
+    %#{$tree-namespace}ui-list__item {
+        border: 0 $tree-ui-list-border-style $tree-ui-list-border-color;
+    }
+
+.#{$tree-namespace}ui-list,
+%#{$tree-namespace}ui-list {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+    border-top-width: $tree-ui-list-border-width;
+
+    > li {
+        @extend %#{$tree-namespace}ui-list__item;
+    }
+
+}
+
+    .#{$tree-namespace}ui-list__item,
+    %#{$tree-namespace}ui-list__item {
+        padding: $tree-ui-list-padding;
+        border-bottom-width: $tree-ui-list-border-width;
+    }
+
+
+
+
+
+@if ($tree-enable-ui-list--small == true) {
+
+    // Small ui-lists.
+
+    .#{$tree-namespace}ui-list--small,
+    %#{$tree-namespace}ui-list--small {
+
+        > .#{$tree-namespace}ui-list__item,
+        > %#{$tree-namespace}ui-list__item {
+            padding: $tree-ui-list-padding--small;
+        }
+
+    }
+
+}
+
+
+
+
+
+@if ($tree-enable-ui-list--large == true) {
+
+    // Large ui-lists.
+
+    .#{$tree-namespace}ui-list--large,
+    %#{$tree-namespace}ui-list--large {
+
+        > .#{$tree-namespace}ui-list__item,
+        > %#{$tree-namespace}ui-list__item {
+            padding: $tree-ui-list-padding--large;
+        }
+
+    }
+
+}
