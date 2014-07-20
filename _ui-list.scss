@@ -8,6 +8,8 @@
 // a `ul` or `ol`.
 
 // Predefine the variables below in order to alter and enable specific features.
+$tree-ui-list-namespace:       $tree-namespace !default;
+
 $tree-ui-list-padding:         $tree-base-spacing-unit !default;
 $tree-ui-list-padding--tiny:   quarter($tree-ui-list-padding) !default;
 $tree-ui-list-padding--small:  halve($tree-ui-list-padding) !default;
@@ -21,28 +23,28 @@ $tree-enable-ui-list--tiny:    false !default;
 $tree-enable-ui-list--small:   false !default;
 $tree-enable-ui-list--large:   false !default;
 
-.#{$tree-namespace}ui-list,
-%#{$tree-namespace}ui-list,
-    .#{$tree-namespace}ui-list__item,
-    %#{$tree-namespace}ui-list__item {
+.#{$tree-ui-list-namespace}ui-list,
+%#{$tree-ui-list-namespace}ui-list,
+    .#{$tree-ui-list-namespace}ui-list__item,
+    %#{$tree-ui-list-namespace}ui-list__item {
         border: 0 $tree-ui-list-border-style $tree-ui-list-border-color;
     }
 
-.#{$tree-namespace}ui-list,
-%#{$tree-namespace}ui-list {
+.#{$tree-ui-list-namespace}ui-list,
+%#{$tree-ui-list-namespace}ui-list {
     margin:  0;
     padding: 0;
     list-style: none;
     border-top-width: $tree-ui-list-border-width;
 
     > li {
-        @extend %#{$tree-namespace}ui-list__item;
+        @extend %#{$tree-ui-list-namespace}ui-list__item;
     }
 
 }
 
-    .#{$tree-namespace}ui-list__item,
-    %#{$tree-namespace}ui-list__item {
+    .#{$tree-ui-list-namespace}ui-list__item,
+    %#{$tree-ui-list-namespace}ui-list__item {
         padding: $tree-ui-list-padding;
         border-bottom-width: $tree-ui-list-border-width;
     }
@@ -55,11 +57,11 @@ $tree-enable-ui-list--large:   false !default;
 
     // Tiny ui-lists.
 
-    .#{$tree-namespace}ui-list--tiny,
-    %#{$tree-namespace}ui-list--tiny {
+    .#{$tree-ui-list-namespace}ui-list--tiny,
+    %#{$tree-ui-list-namespace}ui-list--tiny {
 
-        > .#{$tree-namespace}ui-list__item,
-        > %#{$tree-namespace}ui-list__item {
+        > .#{$tree-ui-list-namespace}ui-list__item,
+        > %#{$tree-ui-list-namespace}ui-list__item {
             padding: $tree-ui-list-padding--tiny;
         }
 
@@ -75,11 +77,11 @@ $tree-enable-ui-list--large:   false !default;
 
     // Small ui-lists.
 
-    .#{$tree-namespace}ui-list--small,
-    %#{$tree-namespace}ui-list--small {
+    .#{$tree-ui-list-namespace}ui-list--small,
+    %#{$tree-ui-list-namespace}ui-list--small {
 
-        > .#{$tree-namespace}ui-list__item,
-        > %#{$tree-namespace}ui-list__item {
+        > .#{$tree-ui-list-namespace}ui-list__item,
+        > %#{$tree-ui-list-namespace}ui-list__item {
             padding: $tree-ui-list-padding--small;
         }
 
@@ -95,11 +97,11 @@ $tree-enable-ui-list--large:   false !default;
 
     // Large ui-lists.
 
-    .#{$tree-namespace}ui-list--large,
-    %#{$tree-namespace}ui-list--large {
+    .#{$tree-ui-list-namespace}ui-list--large,
+    %#{$tree-ui-list-namespace}ui-list--large {
 
-        > .#{$tree-namespace}ui-list__item,
-        > %#{$tree-namespace}ui-list__item {
+        > .#{$tree-ui-list-namespace}ui-list__item,
+        > %#{$tree-ui-list-namespace}ui-list__item {
             padding: $tree-ui-list-padding--large;
         }
 
