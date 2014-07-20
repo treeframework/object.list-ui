@@ -1,7 +1,12 @@
 # The ui-list object
 
-The `ui-list` object is clone of [inuitcss] (https://github.com/inuitcss) -
-[objects.ui-list] (https://github.com/inuitcss/objects.ui-list) <q>creates
-blocky, keyline-delimited list items</q>.
+The `ui-list` object creates blocky, keyline-delimited list items.
 
-It is develop and maintained by [Harry Roberts] (https://twitter.com/csswizardry).
+Install using Bower:
+
+    $ bower install --save tree-ui-list
+
+## Credits
+
+* **[inuitcss](https://github.com/inuitcss)** Powerful, Sass-based, OOCSS
+framework designed with scalability and performance in mind.
