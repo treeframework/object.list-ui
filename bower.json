@@ -1,13 +1,13 @@
 {
-  "name": "tree-ui-list",
-  "version": "0.1.4",
-  "homepage": "https://github.com/treeframework/object.ui-list",
+  "name": "tree-list-ui",
+  "version": "0.1.5",
+  "homepage": "https://github.com/treeframework/object.list-ui",
   "authors": [
     "Harry Roberts <harry@csswizardry.com>",
-    "Ilia Kolev <contact@iliakolev.com>"
+    "Ilia Kolev <info@iliakolev.com>"
   ],
   "description": "Keyline-delimited list object",
-  "main": "_ui-list.scss",
+  "main": "_list-ui.scss",
   "keywords": [
     "css"
   ],
