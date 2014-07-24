@@ -8,20 +8,22 @@
 // a `ul` or `ol`.
 
 // Predefine the variables below in order to alter and enable specific features.
-$tree-list-ui-namespace:       $tree-namespace !default;
+$tree-list-ui-namespace:        $tree-namespace !default;
 
-$tree-list-ui-padding:         $tree-base-spacing-unit !default;
-$tree-list-ui-padding--tiny:   quarter($tree-list-ui-padding) !default;
-$tree-list-ui-padding--small:  halve($tree-list-ui-padding) !default;
-$tree-list-ui-padding--large:  double($tree-list-ui-padding) !default;
+$tree-list-ui-padding:          $tree-base-spacing-unit !default;
+$tree-list-ui-padding--tiny:      quarter($tree-list-ui-padding) !default;
+$tree-list-ui-padding--small:       halve($tree-list-ui-padding) !default;
+$tree-list-ui-padding--large:      double($tree-list-ui-padding) !default;
+$tree-list-ui-padding--huge:    quadruple($tree-list-ui-padding) !default;
 
-$tree-list-ui-border-width:    1px !default;
-$tree-list-ui-border-style:    solid !default;
-$tree-list-ui-border-color:    #edece4 !default;
+$tree-list-ui-border-width:     1px !default;
+$tree-list-ui-border-style:     solid !default;
+$tree-list-ui-border-color:     #edece4 !default;
 
-$tree-enable-list-ui--tiny:    false !default;
-$tree-enable-list-ui--small:   false !default;
-$tree-enable-list-ui--large:   false !default;
+$tree-enable-list-ui--tiny:     false !default;
+$tree-enable-list-ui--small:    false !default;
+$tree-enable-list-ui--large:    false !default;
+$tree-enable-list-ui--huge:     false !default;
 
 .#{$tree-list-ui-namespace}list-ui,
 %#{$tree-list-ui-namespace}list-ui,
@@ -69,10 +71,6 @@ $tree-enable-list-ui--large:   false !default;
 
 }
 
-
-
-
-
 @if ($tree-enable-list-ui--small == true) {
 
     // Small list-uis.
@@ -89,10 +87,6 @@ $tree-enable-list-ui--large:   false !default;
 
 }
 
-
-
-
-
 @if ($tree-enable-list-ui--large == true) {
 
     // Large list-uis.
@@ -103,6 +97,22 @@ $tree-enable-list-ui--large:   false !default;
         > .#{$tree-list-ui-namespace}list-ui__item,
         > %#{$tree-list-ui-namespace}list-ui__item {
             padding: $tree-list-ui-padding--large;
+        }
+
+    }
+
+}
+
+@if ($tree-enable-list-ui--huge == true) {
+
+    // Huge list-uis.
+
+    .#{$tree-list-ui-namespace}list-ui--huge,
+    %#{$tree-list-ui-namespace}list-ui--huge {
+
+        > .#{$tree-list-ui-namespace}list-ui__item,
+        > %#{$tree-list-ui-namespace}list-ui__item {
+            padding: $tree-list-ui-padding--huge;
         }
 
     }
