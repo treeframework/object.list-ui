@@ -4,7 +4,15 @@ The `list-ui` object creates blocky, keyline-delimited list items.
 
 Install using Bower:
 
-    $ bower install --save tree-list-ui
+```sh
+$ bower install tree-list-ui --save
+```
+
+Install using npm:
+
+```sh
+$ npm install tree-list-ui --save
+```
 
 ## Credits
 
