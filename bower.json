@@ -1,22 +1,17 @@
 {
   "name": "tree-list-ui",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "homepage": "https://github.com/treeframework/object.list-ui",
-  "authors": [
-    "Harry Roberts <harry@csswizardry.com>",
-    "Ilia Kolev <info@iliakolev.com>"
-  ],
-  "description": "Keyline-delimited list object",
+  "author": "Ilia Kolev <info@iliakolev.com>",
+  "description": "Keyline-delimited list.",
   "main": "_object.list-ui.scss",
-  "ignore": [
-    "*.md"
-  ],
   "keywords": [
+    "oocss",
     "css"
   ],
-  "license": "Apache",
+  "license": "MIT",
   "dependencies": {
-    "tree-defaults": "~0.2.4",
-    "tree-functions": "~0.2.4"
+    "tree-defaults": "~0.2.5",
+    "tree-functions": "~0.2.5"
   }
 }
