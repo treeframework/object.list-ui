@@ -70,6 +70,9 @@ $tree-enable-list-ui--huge:     false !default;
     border-top-width: $tree-list-ui-border-width;
 }
 
+    // Element: `o-list-ui__item`
+    // =========================================================================
+
     .#{$tree-list-ui-namespace}o-list-ui__item {
         padding: $tree-list-ui-padding;
         border-bottom-width: $tree-list-ui-border-width;
